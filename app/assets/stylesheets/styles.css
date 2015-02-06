@@ -1,0 +1,17 @@
+.name {
+	color: red;
+	font-weight: bold;
+}
+
+.author {
+	color: green;
+}
+
+.publisher {
+	color: gray;
+}
+
+.timestamp {
+	color: blue;
+	font-style: italic;
+}

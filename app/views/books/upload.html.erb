@@ -1,0 +1,12 @@
+<% provide(:title, 'Upload new book') %>
+<h1>Upload new book</h1>
+
+<%= form_for(@book) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_field :name, placeholder: "Name", class: 'form-control' %>
+    <%= f.text_field :author, placeholder: "Author", class: 'form-control' %>
+    <%= f.text_field :publisher, placeholder: "Publisher", class: 'form-control' %>
+  </div>
+  <%= f.submit "Upload", class: "btn btn-primary" %>
+<% end %>

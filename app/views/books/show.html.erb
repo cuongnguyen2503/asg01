@@ -1,0 +1,6 @@
+<strong><%= @book.name %></strong>
+<strong><%= @book.author %></strong>
+<strong><%= @book.publisher %></strong>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(@book.created_at) %> ago by <%= @book.user.name %>
+  </span>
